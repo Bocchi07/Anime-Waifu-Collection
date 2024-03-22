@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: relative;
+}
+
+header {
+    background-color: rgba(25 25 25/ 1);
+    padding: .6em 3em;
+    height: 4em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header i {
+    margin-right: auto;
+    color: white;
+    cursor: pointer;
+    padding: .5em 1em;
+    transition: scale .5s;
+}
+
+
+header i:hover{
+    scale: 1.1;
+}
+
+h1{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: auto;
+    font-size: 1.4em;
+    cursor: pointer;
+    display: flex;
+}
+
+
+.button-container{
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    padding: 1em 1.2em;
+    cursor: pointer;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 4px;
+    background-color: rgba(154, 155, 126, 0.918);
+    margin-bottom: 1em;
+    position: fixed;
+    bottom: 0;
+    font-size: 12px;
+
+    opacity: .4;
+    transition: opacity .7s, transform .7s, all .7s;
+    
+    display: flex;
+    margin-inline: auto;
+}
+
+button:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    background-color: rgb(13, 14, 13);
+    color: rgb(247, 247, 247);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+button i{
+    margin-right: .4em;
+}
+
+/*THIS IS IMAGE STYLE*/
+
+.picture-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: .5em;
+    margin: 1em 1em;
+    height: 100%;
+}
+
+@media (max-width: 1300px){
+    .picture-container{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: .4em;
+        margin: 1em 1em;
+    }
+}
+
+@media (max-width: 1000px){
+    .picture-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: .4em;
+        margin: 1em 1em;
+    }
+}
+
+@media (max-width: 880px){
+    .picture-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .4em;
+        margin: 1em 1em;
+    }
+}
+
+@media (max-width: 640px){
+    .picture-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .4em;
+        margin: 2px;
+    }
+
+    header {
+        background-color: rgba(25 25 25/ 1);
+        padding: .4em 0em;
+    }
+
+    h1{
+        margin-inline: auto;
+    }
+
+    header i{
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .picture-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
+        margin: 2px;
+    }
+
+    header {
+        background-color: rgba(25 25 25/ 1);
+        padding: .4em 0em;
+    }
+
+    h1{
+        margin-inline: auto;
+    }
+
+    header i{
+        margin: 0;
+    }
+}
+.anime-waifu-picture{
+    width: 13em;
+}
